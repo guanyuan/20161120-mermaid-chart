@@ -9,6 +9,6 @@ mermaidAPI.initialize({
     element.innerHTML = svgCode;
   };
 
-  var graphDefinition = 'graph LR\ndev-->sit\nsit-->uat';
+  var graphDefinition = 'graph LR\nid1((SIT)) --- id2((UAT))\nid2((UAT)) --- id3((PROD))\nid1((SIT)) --- id4((STAGE))\nstyle id1 fill:#f9f,stroke:#333,stroke-width:4px;';
   var graph = mermaidAPI.render('graphDiv', graphDefinition, insertSvg);
 })();
