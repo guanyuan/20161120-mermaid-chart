@@ -4,22 +4,12 @@
     <title>flowchart.js · Playground</title>
     <link rel="stylesheet" href="./node_modules/mermaid/dist/mermaid.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="./node_modules/mermaid/dist/mermaid.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/mermaid/dist/mermaidAPI.js"></script>
 </head>
 <body>
-<div class="mermaid">
-    graph LR
-        build-->dev
-        dev-->sit
-        sit-->uat
-        uat-->prod
-        prod-->end
-</div>
+<div id="graphDiv"></div>
 
-<script>
-    $(document).ready(function() {
-        mermaid.initialize();
-    });
-</script>
+<script src="index.js"></script>
 </body>
 </html>
