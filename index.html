@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>flowchart.js · Playground</title>
+    <link rel="stylesheet" href="./node_modules/mermaid/dist/mermaid.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./node_modules/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+<div class="mermaid">
+    graph LR
+        build-->dev
+        dev-->sit
+        sit-->uat
+        uat-->prod
+        prod-->end
+</div>
+
+<script>
+    $(document).ready(function() {
+        mermaid.initialize();
+    });
+</script>
+</body>
+</html>
